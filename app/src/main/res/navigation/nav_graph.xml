@@ -9,5 +9,21 @@
         android:id="@+id/mainFragment"
         android:name="com.dija.excercisedice.ui.main.MainFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_fragment" />
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_diceFragment"
+            app:destination="@id/diceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diceFragment"
+        android:name="com.dija.excercisedice.ui.main.DiceFragment"
+        android:label="dice_fragment"
+        tools:layout="@layout/dice_fragment">
+
+        <argument
+            android:name="data"
+            app:argType="string" />
+
+    </fragment>
+
 </navigation>

@@ -9,29 +9,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import kotlinx.android.synthetic.main.main_fragment.*
+import androidx.navigation.Navigation
 import com.dija.excercisedice.R
+import kotlinx.android.synthetic.main.main_fragment.*
 
-class MainFragment : Fragment(), View.OnClickListener {
-
-
-    override fun onClick(p: View?) {
-     //Toast.makeText(context,viewModel.getCount().toString()+p0.toString(),Toast.LENGTH_LONG).show()
-    if(p == abs) {
-        Toast.makeText(context,viewModel.getCount().toString()+"ABS",Toast.LENGTH_LONG).show()
-    } else if( p == legs){
-        Toast.makeText(context,viewModel.getCount().toString()+"LEGS",Toast.LENGTH_LONG).show()
-    } else if( p == cardio){
-        Toast.makeText(context,viewModel.getCount().toString()+"CARDIO",Toast.LENGTH_LONG).show()
-    } else if( p == arms){
-        Toast.makeText(context,viewModel.getCount().toString()+"ARMS",Toast.LENGTH_LONG).show()
-    } else if( p == chest){
-        Toast.makeText(context,viewModel.getCount().toString()+"CHEST",Toast.LENGTH_LONG).show()
-    } else if( p == back){
-        Toast.makeText(context,viewModel.getCount().toString()+"BACK",Toast.LENGTH_LONG).show()
-    }
-
-    }
+class MainFragment : Fragment() {
 
     companion object {
         fun newInstance() = MainFragment()
@@ -50,12 +32,30 @@ class MainFragment : Fragment(), View.OnClickListener {
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
 
-        abs.setOnClickListener(this)
-        legs.setOnClickListener(this)
-        cardio.setOnClickListener(this)
-        arms.setOnClickListener(this)
-        chest.setOnClickListener(this)
-        back.setOnClickListener(this)
+       abs.setOnClickListener{
+           val bundle = Bundle().also { it.putString("data", "abs") }
+           Navigation.findNavController(it).navigate(R.id.action_mainFragment_to_diceFragment,bundle)
+        }
+        legs.setOnClickListener{
+            val bundle = Bundle().also { it.putString("data", "legs") }
+            Navigation.findNavController(it).navigate(R.id.action_mainFragment_to_diceFragment,bundle)
+        }
+        cardio.setOnClickListener{
+            val bundle = Bundle().also { it.putString("data", "cardio") }
+            Navigation.findNavController(it).navigate(R.id.action_mainFragment_to_diceFragment,bundle)
+        }
+        arms.setOnClickListener{
+            val bundle = Bundle().also { it.putString("data", "arms") }
+            Navigation.findNavController(it).navigate(R.id.action_mainFragment_to_diceFragment,bundle)
+        }
+        chest.setOnClickListener{
+            val bundle = Bundle().also { it.putString("data", "chest") }
+            Navigation.findNavController(it).navigate(R.id.action_mainFragment_to_diceFragment,bundle)
+        }
+        back.setOnClickListener{
+            val bundle = Bundle().also { it.putString("data", "back") }
+            Navigation.findNavController(it).navigate(R.id.action_mainFragment_to_diceFragment,bundle)
+        }
     }
 
 }
