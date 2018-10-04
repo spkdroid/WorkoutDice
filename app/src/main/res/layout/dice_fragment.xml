@@ -7,64 +7,45 @@
     tools:context=".ui.main.DiceFragment"
     tools:layout_editor_absoluteY="81dp">
 
-    <TextView
-        android:id="@+id/dicetype"
-        android:layout_width="80dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="28dp"
-        android:text="Hello"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/actiontype"
-        app:layout_constraintEnd_toStartOf="@+id/rolldice"
-        app:layout_constraintStart_toStartOf="@+id/actiontype"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="invisible"
-        />
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="193dp"
-        android:layout_height="138dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="225dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
         android:src="@drawable/die"
         app:layout_constraintBottom_toTopOf="@+id/rolldice"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actiontype" />
 
     <TextView
         android:id="@+id/dicenumber"
-        android:layout_width="184dp"
-        android:layout_height="154dp"
-        android:layout_marginTop="65dp"
-        android:layout_marginBottom="68dp"
+        android:layout_width="145dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="9dp"
         android:gravity="center"
         android:text="1"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="96sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/rolldice"
+        app:layout_constraintBottom_toTopOf="@+id/rolldice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/actiontype"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <Button
         android:id="@+id/rolldice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
         android:text="Roll"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dicenumber"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
@@ -73,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="94dp"
+        android:layout_marginBottom="29dp"
         android:gravity="center"
         android:text="Text"
         android:textColor="@android:color/black"
@@ -82,6 +63,18 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dicetype" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="76dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/gymicon"
+        app:layout_constraintBottom_toTopOf="@+id/actiontype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
