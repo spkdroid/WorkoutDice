@@ -39,6 +39,5 @@ public class DiceFragment extends Fragment {
         Bundle bundle = getArguments();
         String diceType = bundle.getString("data");
         mDiceTitle.setText(diceType);
-
     }
 }
