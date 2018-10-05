@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.dija.excercisedice.ui.main.MainFragment"
+        android:name="com.dija.excercisedice.ui.main.fragment.MainFragment"
         android:label="main_fragment"
         tools:layout="@layout/main_fragment" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/diceFragment"
-        android:name="com.dija.excercisedice.ui.main.DiceFragment"
+        android:name="com.dija.excercisedice.ui.main.fragment.DiceFragment"
         android:label="dice_fragment"
         tools:layout="@layout/dice_fragment">
 

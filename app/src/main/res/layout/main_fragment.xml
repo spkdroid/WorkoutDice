@@ -18,8 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="170dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="-59dp"
-            android:layout_marginBottom="93dp"
+            android:layout_marginLeft="-112dp"
+            android:layout_marginBottom="7dp"
             android:layout_toRightOf="@+id/endoscope_logo"
             android:src="@drawable/titlelogo" />
 
@@ -29,7 +29,7 @@
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:layout_marginRight="-20dp"
-            android:layout_marginBottom="165dp"
+            android:layout_marginBottom="192dp"
             android:src="@drawable/diceicon" />
 
     </RelativeLayout>
@@ -42,32 +42,33 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/start_stream"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/abs"
+            >
 
             <ImageView
                 android:id="@+id/start_stream_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/abs" />
+                android:layout_width="87dp"
+                android:layout_height="52dp"
+                android:layout_above="@+id/abs"
+                android:src="@drawable/abs_icon" />
 
             <TextView
-                android:id="@+id/abs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
                 android:text="ABS"
                 android:textColor="@android:color/black"
-                android:textSize="36sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/view_stream"
+            android:id="@+id/legs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -77,16 +78,15 @@
             <ImageView
                 android:id="@+id/view_stream_icon"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="53dp"
+                android:src="@drawable/legs_icon" />
 
             <TextView
-                android:id="@+id/legs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="LEGS"
                 android:textColor="@android:color/black"
-                android:textSize="36sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
@@ -104,19 +104,22 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/chest"
+            >
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="52dp"
+                android:layout_above="@+id/chest"
+                android:src="@drawable/chest_icon" />
 
             <TextView
-                android:id="@+id/chest"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="CHEST"
                 android:textColor="@android:color/black"
-                android:textSize="36sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -125,20 +128,21 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/back"
+            >
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="53dp"
+                android:src="@drawable/back_icon" />
 
             <TextView
-                android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BACK"
                 android:textColor="@android:color/black"
-                android:textSize="36sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
@@ -153,30 +157,30 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/settings"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical|center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/cardio"
+            >
 
             <ImageView
-                android:id="@+id/settings_icon"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="48dp"
+                android:src="@drawable/heart_icon" />
 
             <TextView
-                android:id="@+id/cardio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CARDIO"
                 android:textColor="@android:color/black"
-                android:textSize="36sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/how_to_use"
+            android:id="@+id/arms"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -186,16 +190,15 @@
             <ImageView
                 android:id="@+id/how_to_use_icon"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="52dp"
+                android:src="@drawable/arm_icon" />
 
             <TextView
-                android:id="@+id/arms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ARMS"
                 android:textColor="@android:color/black"
-                android:textSize="36sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>

@@ -1,4 +1,4 @@
-package com.dija.excercisedice.ui.main
+package com.dija.excercisedice.ui.main.viewmodel
 
 import android.arch.lifecycle.ViewModel
 
