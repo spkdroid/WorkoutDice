@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -20,6 +21,7 @@ public class DiceFragment extends Fragment {
     TextView mActivityType;
     TextView mDiceNumber;
     Button RollHandler;
+    ImageView DiceBackGround;
 
     public static DiceFragment newInstance() {
         return new DiceFragment();
@@ -32,6 +34,7 @@ public class DiceFragment extends Fragment {
         mDiceNumber = v.findViewById(R.id.dicenumber);
         mActivityType = v.findViewById(R.id.actiontype);
         RollHandler = v.findViewById(R.id.rolldice);
+        DiceBackGround =  v.findViewById(R.id.dicebackground);
         return v;
     }
 
@@ -49,8 +52,10 @@ public class DiceFragment extends Fragment {
             public void onClick(View view) {
                 mDiceNumber.setText(mViewModel.generateRepetitionNumber()+"");
                 mActivityType.setText(mViewModel.getExcersiseType(diceType));
+
             }
         });
+
         RollHandler.performClick();
     }
 }
