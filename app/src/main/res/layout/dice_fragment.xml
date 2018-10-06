@@ -1,80 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.DiceFragment"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context=".ui.main.fragment.DiceFragment"
+    tools:layout_editor_absoluteY="81dp"
+    android:orientation="vertical"
+    >
 
     <ImageView
-        android:id="@+id/dicebackground"
-        android:layout_width="225dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="1dp"
-        android:src="@drawable/die"
-        app:layout_constraintBottom_toTopOf="@+id/rolldice"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/actiontype" />
-
-    <TextView
-        android:id="@+id/dicenumber"
-        android:layout_width="145dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="9dp"
-        android:gravity="center"
-        android:text="1"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="96sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/rolldice"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/dicebackground" />
-
-    <Button
-        android:id="@+id/rolldice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="48dp"
-        android:text="Roll"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/dicenumber"
-        app:layout_constraintTop_toBottomOf="@+id/dicebackground" />
+        android:id="@+id/dicetitleimage"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:src="@drawable/gymicon"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/actiontype"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="29dp"
+        android:layout_width="374dp"
+        android:layout_height="120dp"
         android:gravity="center"
         android:text="Text"
         android:textColor="@android:color/black"
-        android:textSize="36sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/dicebackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="165dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="76dp"
-        android:layout_height="127dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="22dp"
-        android:src="@drawable/gymicon"
-        app:layout_constraintBottom_toTopOf="@+id/actiontype"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/dicebackground"
+            android:layout_width="337dp"
+            android:layout_height="190dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/die"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="243dp" />
+
+        <TextView
+            android:id="@+id/dicenumber"
+            android:layout_width="145dp"
+            android:layout_height="143dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="114dp"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="72sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="264dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/rolldice"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="37dp"
+            android:text="Roll"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="415dp" />
+    </RelativeLayout>
+
+</LinearLayout>
