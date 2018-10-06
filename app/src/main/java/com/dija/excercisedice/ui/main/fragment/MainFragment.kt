@@ -54,6 +54,10 @@ class MainFragment : Fragment() {
             val bundle = Bundle().also { it.putString("data", "back") }
             Navigation.findNavController(it).navigate(R.id.action_mainFragment_to_diceFragment,bundle)
         }
+        license.setOnClickListener{
+            Navigation.findNavController(it).navigate(R.id.action_mainFragment_to_licenseFragment)
+        }
+
     }
 
 

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_mainFragment_to_diceFragment"
             app:destination="@id/diceFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_licenseFragment"
+            app:destination="@id/licenseFragment" />
     </fragment>
     <fragment
         android:id="@+id/diceFragment"
@@ -25,5 +28,10 @@
             app:argType="string" />
 
     </fragment>
+    <fragment
+        android:id="@+id/licenseFragment"
+        android:name="com.dija.excercisedice.ui.main.fragment.LicenseFragment"
+        android:label="model_license_fragment"
+        tools:layout="@layout/model_license_fragment" />
 
 </navigation>

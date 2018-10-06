@@ -22,8 +22,10 @@ public class DiceFragment extends Fragment implements View.OnClickListener {
     TextView mDiceNumber;
     Button RollHandler;
     ImageView DiceBackGround;
+    ImageView DiceTitleImage;
     private static String diceType;
     private static MediaPlayer mDiceSound;
+
 
     public static DiceFragment newInstance() {
         return new DiceFragment();
@@ -38,6 +40,7 @@ public class DiceFragment extends Fragment implements View.OnClickListener {
         mActivityType = v.findViewById(R.id.actiontype);
         RollHandler = v.findViewById(R.id.rolldice);
         DiceBackGround =  v.findViewById(R.id.dicebackground);
+        DiceTitleImage = v.findViewById(R.id.dicetitleimage);
         return v;
     }
 
@@ -48,8 +51,35 @@ public class DiceFragment extends Fragment implements View.OnClickListener {
         // TODO: Use the ViewModel
         Bundle bundle = getArguments();
         diceType = bundle.getString("data");
+        setTitleImage(diceType);
         RollHandler.setOnClickListener(this);
         RollHandler.performClick();
+    }
+
+    private void setTitleImage(String diceType) {
+
+        switch (diceType){
+            case "abs":
+                DiceTitleImage.setImageResource(R.drawable.abs_icon);
+                break;
+            case "legs":
+                DiceTitleImage.setImageResource(R.drawable.legs_icon);
+                break;
+            case "cardio":
+                DiceTitleImage.setImageResource(R.drawable.heart_icon);
+                break;
+            case "arms":
+                DiceTitleImage.setImageResource(R.drawable.arm_icon);
+                break;
+            case "chest":
+                DiceTitleImage.setImageResource(R.drawable.chest_icon);
+                break;
+            case "back":
+                DiceTitleImage.setImageResource(R.drawable.back_icon);
+                break;
+        }
+
+
     }
 
     @Override

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_menu_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,8 +30,18 @@
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:layout_marginRight="-20dp"
-            android:layout_marginBottom="192dp"
+            android:layout_marginBottom="99dp"
             android:src="@drawable/diceicon" />
+
+        <ImageView
+            android:id="@+id/license"
+            android:layout_width="44dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="225dp"
+            app:srcCompat="@drawable/license_icon" />
 
     </RelativeLayout>
 
