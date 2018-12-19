@@ -9,6 +9,12 @@ Exercise Dice is a workout application which would pick you the exercise and the
 <img align="left" width="350" height="625" src="https://lh3.googleusercontent.com/ANAGOpYS_OicN67fVLHrZlECeGKlij-mdJTaerzQxFGqMICKLBPoVoCgJlpzOFFuxws=w1536-h754-rw">
 <img align="left" width="350" height="625" src="https://lh3.googleusercontent.com/Yud3ydvT41bi2ECRiX7rQfkn_ufvjMgnFvuu_PqSsBGKfQkRmVWnFPRX5fhvirFBZmY=w1536-h754-rw
 
-## Google Play Link
 
-<a href="https://play.google.com/store/apps/details?id=com.dija.excercisedice"> Install Here </a>
+## Download
+<strong>
+<a href="https://play.google.com/store/apps/details?id=com.dija.excercisedice">Download Now!!</a>
+</strong>
+
+## Authors
+
+* **Ramkumar Velmurugan** - <a href="http://www.spkdroid.com/CV/">Portfolio</a>
