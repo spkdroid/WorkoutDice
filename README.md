@@ -6,8 +6,7 @@ Exercise Dice is a workout application which would pick you the exercise and the
 
 ## Screen Shots
 
-<img align="left" width="350" height="625" src="https://lh3.googleusercontent.com/ANAGOpYS_OicN67fVLHrZlECeGKlij-mdJTaerzQxFGqMICKLBPoVoCgJlpzOFFuxws=w1536-h754-rw">
-</br>
+![alt text] (https://lh3.googleusercontent.com/ANAGOpYS_OicN67fVLHrZlECeGKlij-mdJTaerzQxFGqMICKLBPoVoCgJlpzOFFuxws=w1536-h754-rw")
 
 ## Download
 <strong>
